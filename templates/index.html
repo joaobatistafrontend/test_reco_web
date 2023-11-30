@@ -1,0 +1,33 @@
+<!-- meu_app/templates/meu_app/index.html 
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detecção de Rostos</title>
+</head>
+<body>
+    <h1>Detecção de Rostos com OpenCV e Django</h1>
+    <input type="file" id="inputImage" accept="image/*">
+    <br>
+    <img id="outputImage" style="max-width:100%">
+    <script src="{% static 'js/detector.js' %}"></script>
+    
+</body>
+</html>
+-->
+<!-- meu_app/templates/meu_app/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detecção de Rostos</title>
+</head>
+<body>
+    <h1>Detecção de Rostos com OpenCV e Django</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <br>
+    <button id="startButton">Iniciar Detecção</button>
+    <button id="stopButton">Parar Detecção</button>
+    <script src="{% static 'js/detector.js' %}"></script>
+</body>
+</html>
